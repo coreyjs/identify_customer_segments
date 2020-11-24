@@ -16023,78 +16023,13 @@ Name: OST_WEST_KZ, dtype: int64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[240]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">azdias_formatted</span><span class="p">[</span><span class="s1">&#39;OST_WEST_KZ&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">([</span><span class="s2">&quot;W&quot;</span><span class="p">,</span> <span class="s2">&quot;O&quot;</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-240-8e346a0f7c6f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>azdias_formatted<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#39;OST_WEST_KZ&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>replace<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#34;W&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-blue-intense-fg ansi-bold">&#34;O&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> inplace<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">True</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\series.py</span> in <span class="ansi-cyan-fg">replace</span><span class="ansi-blue-intense-fg ansi-bold">(self, to_replace, value, inplace, limit, regex, method)</span>
-<span class="ansi-green-fg">   4170</span>         method<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#34;pad&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span>
-<span class="ansi-green-fg">   4171</span>     ):
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 4172</span><span class="ansi-yellow-intense-fg ansi-bold">         return super().replace(
-</span><span class="ansi-green-fg">   4173</span>             to_replace<span class="ansi-yellow-intense-fg ansi-bold">=</span>to_replace<span class="ansi-yellow-intense-fg ansi-bold">,</span>
-<span class="ansi-green-fg">   4174</span>             value<span class="ansi-yellow-intense-fg ansi-bold">=</span>value<span class="ansi-yellow-intense-fg ansi-bold">,</span>
-
-<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\generic.py</span> in <span class="ansi-cyan-fg">replace</span><span class="ansi-blue-intense-fg ansi-bold">(self, to_replace, value, inplace, limit, regex, method)</span>
-<span class="ansi-green-fg">   6693</span>                         )
-<span class="ansi-green-fg">   6694</span> 
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 6695</span><span class="ansi-yellow-intense-fg ansi-bold">                     new_data = self._data.replace_list(
-</span><span class="ansi-green-fg">   6696</span>                         src_list<span class="ansi-yellow-intense-fg ansi-bold">=</span>to_replace<span class="ansi-yellow-intense-fg ansi-bold">,</span>
-<span class="ansi-green-fg">   6697</span>                         dest_list<span class="ansi-yellow-intense-fg ansi-bold">=</span>value<span class="ansi-yellow-intense-fg ansi-bold">,</span>
-
-<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\internals\managers.py</span> in <span class="ansi-cyan-fg">replace_list</span><span class="ansi-blue-intense-fg ansi-bold">(self, src_list, dest_list, inplace, regex)</span>
-<span class="ansi-green-fg">    611</span>             <span class="ansi-green-intense-fg ansi-bold">return</span> _compare_or_regex_search<span class="ansi-yellow-intense-fg ansi-bold">(</span>values<span class="ansi-yellow-intense-fg ansi-bold">,</span> s<span class="ansi-yellow-intense-fg ansi-bold">,</span> regex<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">    612</span> 
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 613</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>masks <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span>comp<span class="ansi-yellow-intense-fg ansi-bold">(</span>s<span class="ansi-yellow-intense-fg ansi-bold">,</span> regex<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-green-intense-fg ansi-bold">for</span> i<span class="ansi-yellow-intense-fg ansi-bold">,</span> s <span class="ansi-green-intense-fg ansi-bold">in</span> enumerate<span class="ansi-yellow-intense-fg ansi-bold">(</span>src_list<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
-<span class="ansi-green-fg">    614</span> 
-<span class="ansi-green-fg">    615</span>         result_blocks <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
-
-<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\internals\managers.py</span> in <span class="ansi-cyan-fg">&lt;listcomp&gt;</span><span class="ansi-blue-intense-fg ansi-bold">(.0)</span>
-<span class="ansi-green-fg">    611</span>             <span class="ansi-green-intense-fg ansi-bold">return</span> _compare_or_regex_search<span class="ansi-yellow-intense-fg ansi-bold">(</span>values<span class="ansi-yellow-intense-fg ansi-bold">,</span> s<span class="ansi-yellow-intense-fg ansi-bold">,</span> regex<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">    612</span> 
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 613</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>masks <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span>comp<span class="ansi-yellow-intense-fg ansi-bold">(</span>s<span class="ansi-yellow-intense-fg ansi-bold">,</span> regex<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-green-intense-fg ansi-bold">for</span> i<span class="ansi-yellow-intense-fg ansi-bold">,</span> s <span class="ansi-green-intense-fg ansi-bold">in</span> enumerate<span class="ansi-yellow-intense-fg ansi-bold">(</span>src_list<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
-<span class="ansi-green-fg">    614</span> 
-<span class="ansi-green-fg">    615</span>         result_blocks <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
-
-<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\internals\managers.py</span> in <span class="ansi-cyan-fg">comp</span><span class="ansi-blue-intense-fg ansi-bold">(s, regex)</span>
-<span class="ansi-green-fg">    609</span>                     maybe_convert_objects<span class="ansi-yellow-intense-fg ansi-bold">(</span>values<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> s<span class="ansi-yellow-intense-fg ansi-bold">.</span>asm8<span class="ansi-yellow-intense-fg ansi-bold">,</span> regex
-<span class="ansi-green-fg">    610</span>                 )
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 611</span><span class="ansi-yellow-intense-fg ansi-bold">             </span><span class="ansi-green-intense-fg ansi-bold">return</span> _compare_or_regex_search<span class="ansi-yellow-intense-fg ansi-bold">(</span>values<span class="ansi-yellow-intense-fg ansi-bold">,</span> s<span class="ansi-yellow-intense-fg ansi-bold">,</span> regex<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">    612</span> 
-<span class="ansi-green-fg">    613</span>         masks <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span>comp<span class="ansi-yellow-intense-fg ansi-bold">(</span>s<span class="ansi-yellow-intense-fg ansi-bold">,</span> regex<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-green-intense-fg ansi-bold">for</span> i<span class="ansi-yellow-intense-fg ansi-bold">,</span> s <span class="ansi-green-intense-fg ansi-bold">in</span> enumerate<span class="ansi-yellow-intense-fg ansi-bold">(</span>src_list<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
-
-<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\internals\managers.py</span> in <span class="ansi-cyan-fg">_compare_or_regex_search</span><span class="ansi-blue-intense-fg ansi-bold">(a, b, regex)</span>
-<span class="ansi-green-fg">   1933</span>             type_names<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">f&#34;ndarray(dtype={b.dtype})&#34;</span>
-<span class="ansi-green-fg">   1934</span> 
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1935</span><span class="ansi-yellow-intense-fg ansi-bold">         raise TypeError(
-</span><span class="ansi-green-fg">   1936</span>             <span class="ansi-blue-intense-fg ansi-bold">f&#34;Cannot compare types {repr(type_names[0])} and {repr(type_names[1])}&#34;</span>
-<span class="ansi-green-fg">   1937</span>         )
-
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: Cannot compare types &#39;ndarray(dtype=int64)&#39; and &#39;str&#39;</pre>
-</div>
-</div>
-
 </div>
 </div>
 
